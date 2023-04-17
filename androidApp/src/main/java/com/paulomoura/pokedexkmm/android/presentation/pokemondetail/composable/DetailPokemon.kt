@@ -1,4 +1,4 @@
-package com.paulomoura.pokedexcomposeclean.presentation.pokemondetail.composable
+package com.paulomoura.pokedexkmm.android.presentation.pokemondetail.composable
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -18,15 +18,31 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
-import com.paulomoura.pokedexcomposeclean.R
-import com.paulomoura.pokedexcomposeclean.presentation.common.composable.debugPlaceholder
-import com.paulomoura.pokedexcomposeclean.common.extension.toPokemonNumber
-import com.paulomoura.pokedexcomposeclean.domain.model.Pokemon
-import com.paulomoura.pokedexcomposeclean.presentation.pokemondetail.composable.TYPE.*
-import com.paulomoura.pokedexcomposeclean.presentation.ui.resources.EVOLUTIONS
-import com.paulomoura.pokedexcomposeclean.presentation.ui.resources.NO_EVOLUTION
-import com.paulomoura.pokedexcomposeclean.presentation.ui.resources.TYPE
-import com.paulomoura.pokedexcomposeclean.presentation.ui.theme.*
+import com.paulomoura.pokedexkmm.android.presentation.common.composable.debugPlaceholder
+import com.paulomoura.pokedexkmm.android.presentation.pokemondetail.composable.TYPE.*
+import com.paulomoura.pokedexkmm.android.presentation.ui.resources.EVOLUTIONS
+import com.paulomoura.pokedexkmm.android.presentation.ui.resources.NO_EVOLUTION
+import com.paulomoura.pokedexkmm.android.presentation.ui.resources.TYPE
+import com.paulomoura.pokedexkmm.android.presentation.ui.theme.BlueViolet
+import com.paulomoura.pokedexkmm.android.presentation.ui.theme.Brown
+import com.paulomoura.pokedexkmm.android.presentation.ui.theme.BurlyWood
+import com.paulomoura.pokedexkmm.android.presentation.ui.theme.CornflowerBlue
+import com.paulomoura.pokedexkmm.android.presentation.ui.theme.DarkKhaki
+import com.paulomoura.pokedexkmm.android.presentation.ui.theme.DarkSlateBlue
+import com.paulomoura.pokedexkmm.android.presentation.ui.theme.DarkWhite
+import com.paulomoura.pokedexkmm.android.presentation.ui.theme.DeepPink
+import com.paulomoura.pokedexkmm.android.presentation.ui.theme.DeepSkyBlue
+import com.paulomoura.pokedexkmm.android.presentation.ui.theme.Gold
+import com.paulomoura.pokedexkmm.android.presentation.ui.theme.Green
+import com.paulomoura.pokedexkmm.android.presentation.ui.theme.HotPink
+import com.paulomoura.pokedexkmm.android.presentation.ui.theme.LightSlateGray
+import com.paulomoura.pokedexkmm.android.presentation.ui.theme.Purple
+import com.paulomoura.pokedexkmm.android.presentation.ui.theme.Red
+import com.paulomoura.pokedexkmm.android.presentation.ui.theme.SlateGray
+import com.paulomoura.pokedexkmm.android.presentation.ui.theme.Turquoise
+import com.paulomoura.pokedexkmm.android.presentation.ui.theme.YellowGreen
+import com.paulomoura.pokedexkmm.common.extension.toPokemonNumber
+import com.paulomoura.pokedexkmm.domain.model.Pokemon
 
 @Composable
 fun DetailPokemon(pokemon: Pokemon?) {
@@ -55,7 +71,7 @@ fun DetailPokemon(pokemon: Pokemon?) {
                         modifier = Modifier
                             .fillMaxWidth()
                             .height(288.dp),
-                        placeholder = debugPlaceholder(R.drawable.pokemon_placeholder)
+                        placeholder = debugPlaceholder(com.paulomoura.pokedexkmm.android.R.mipmap.pokemon_placeholder)
                     )
                     Text(
                         text = pokemon.description,
@@ -116,7 +132,7 @@ fun DetailPokemon(pokemon: Pokemon?) {
                         modifier = Modifier
                             .fillMaxWidth()
                             .height(128.dp),
-                        placeholder = debugPlaceholder(R.drawable.pokemon_placeholder)
+                        placeholder = debugPlaceholder(com.paulomoura.pokedexkmm.android.R.mipmap.pokemon_placeholder)
                     )
                     Text(
                         text = evolution.name,

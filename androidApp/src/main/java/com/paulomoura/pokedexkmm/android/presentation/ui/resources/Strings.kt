@@ -1,4 +1,4 @@
-package com.paulomoura.pokedexcomposeclean.presentation.ui.resources
+package com.paulomoura.pokedexkmm.android.presentation.ui.resources
 
 const val APP_NAME = "Pokedéx"
 const val TYPE = "Type"

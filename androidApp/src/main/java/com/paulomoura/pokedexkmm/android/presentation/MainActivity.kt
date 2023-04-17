@@ -1,4 +1,4 @@
-package com.paulomoura.pokedexcomposeclean.presentation
+package com.paulomoura.pokedexkmm.android.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -18,10 +18,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.paulomoura.pokedexcomposeclean.presentation.pokemondetail.PokemonDetailScreen
-import com.paulomoura.pokedexcomposeclean.presentation.pokemonlist.PokemonListScreen
-import com.paulomoura.pokedexcomposeclean.presentation.ui.resources.APP_NAME
-import com.paulomoura.pokedexcomposeclean.presentation.ui.theme.PokedexComposeCleanTheme
+import com.paulomoura.pokedexkmm.android.presentation.pokemondetail.PokemonDetailScreen
+import com.paulomoura.pokedexkmm.android.presentation.pokemonlist.PokemonListScreen
+import com.paulomoura.pokedexkmm.android.presentation.ui.resources.APP_NAME
+import com.paulomoura.pokedexkmm.android.presentation.ui.theme.PokedexComposeCleanTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

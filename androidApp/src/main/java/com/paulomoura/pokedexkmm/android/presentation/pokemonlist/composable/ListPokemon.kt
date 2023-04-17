@@ -1,4 +1,4 @@
-package com.paulomoura.pokedexcomposeclean.presentation.pokemonlist.composable
+package com.paulomoura.pokedexkmm.android.presentation.pokemonlist.composable
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.clickable
@@ -12,10 +12,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
-import com.paulomoura.pokedexcomposeclean.R
-import com.paulomoura.pokedexcomposeclean.presentation.common.composable.SearchTextField
-import com.paulomoura.pokedexcomposeclean.presentation.common.composable.debugPlaceholder
-import com.paulomoura.pokedexcomposeclean.domain.model.PokemonListItem
+import com.paulomoura.pokedexkmm.android.presentation.common.composable.SearchTextField
+import com.paulomoura.pokedexkmm.android.presentation.common.composable.debugPlaceholder
+import com.paulomoura.pokedexkmm.domain.model.PokemonListItem
 
 @Composable
 fun ListPokemon(
@@ -49,7 +48,7 @@ fun ListPokemon(
                         modifier = Modifier
                             .size(64.dp)
                             .padding(start = 8.dp, top = 8.dp, bottom = 8.dp),
-                        placeholder = debugPlaceholder(id = R.drawable.pokemon_placeholder)
+                        placeholder = debugPlaceholder(com.paulomoura.pokedexkmm.android.R.mipmap.pokemon_placeholder)
                     )
                     Text(
                         text = String.format("%03d", pokemon.number),

@@ -42,7 +42,6 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 implementation("io.ktor:ktor-client-android:1.5.0")
-                implementation("io.insert-koin:koin-androidx-compose:3.4.3")
             }
         }
         val androidUnitTest by getting

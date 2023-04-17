@@ -1,6 +1,6 @@
-package com.paulomoura.pokedexcomposeclean.presentation.pokemondetail
+package com.paulomoura.pokedexkmm.android.presentation.pokemondetail
 
-import com.paulomoura.pokedexcomposeclean.domain.model.Pokemon
+import com.paulomoura.pokedexkmm.domain.model.Pokemon
 
 data class PokemonDetailState(
     val loading: Boolean = false,

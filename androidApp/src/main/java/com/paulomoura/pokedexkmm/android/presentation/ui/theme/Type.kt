@@ -1,4 +1,4 @@
-package com.paulomoura.pokedexcomposeclean.presentation.ui.theme
+package com.paulomoura.pokedexkmm.android.presentation.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

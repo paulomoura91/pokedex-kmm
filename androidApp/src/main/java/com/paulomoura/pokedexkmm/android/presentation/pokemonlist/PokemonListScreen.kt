@@ -1,4 +1,4 @@
-package com.paulomoura.pokedexcomposeclean.presentation.pokemonlist
+package com.paulomoura.pokedexkmm.android.presentation.pokemonlist
 
 import android.widget.Toast
 import androidx.compose.foundation.layout.Box
@@ -12,10 +12,10 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
-import com.paulomoura.pokedexcomposeclean.domain.model.PokemonListItem
-import com.paulomoura.pokedexcomposeclean.presentation.Route
-import com.paulomoura.pokedexcomposeclean.presentation.pokemonlist.composable.ListPokemon
-import com.paulomoura.pokedexcomposeclean.presentation.ui.theme.PokedexComposeCleanTheme
+import com.paulomoura.pokedexkmm.android.presentation.Route
+import com.paulomoura.pokedexkmm.android.presentation.pokemonlist.composable.ListPokemon
+import com.paulomoura.pokedexkmm.android.presentation.ui.theme.PokedexComposeCleanTheme
+import com.paulomoura.pokedexkmm.domain.model.PokemonListItem
 import org.koin.androidx.compose.getViewModel
 
 @Composable

@@ -1,4 +1,4 @@
-package com.paulomoura.pokedexcomposeclean.presentation.pokemondetail
+package com.paulomoura.pokedexkmm.android.presentation.pokemondetail
 
 import android.widget.Toast
 import androidx.compose.foundation.layout.Box
@@ -11,9 +11,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.paulomoura.pokedexcomposeclean.domain.model.Pokemon
-import com.paulomoura.pokedexcomposeclean.presentation.pokemondetail.composable.DetailPokemon
-import com.paulomoura.pokedexcomposeclean.presentation.ui.theme.PokedexComposeCleanTheme
+import com.paulomoura.pokedexkmm.android.presentation.pokemondetail.composable.DetailPokemon
+import com.paulomoura.pokedexkmm.android.presentation.ui.theme.PokedexComposeCleanTheme
+import com.paulomoura.pokedexkmm.domain.model.Pokemon
 import org.koin.androidx.compose.getViewModel
 import org.koin.core.parameter.parametersOf
 

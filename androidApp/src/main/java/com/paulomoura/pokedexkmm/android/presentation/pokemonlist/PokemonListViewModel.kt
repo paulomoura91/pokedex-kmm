@@ -1,11 +1,11 @@
-package com.paulomoura.pokedexcomposeclean.presentation.pokemonlist
+package com.paulomoura.pokedexkmm.android.presentation.pokemonlist
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.paulomoura.pokedexcomposeclean.common.Response
-import com.paulomoura.pokedexcomposeclean.common.constants.ErrorConstants
-import com.paulomoura.pokedexcomposeclean.domain.model.doesMatchSearch
-import com.paulomoura.pokedexcomposeclean.domain.usecase.GetPokemonsUseCase
+import com.paulomoura.pokedexkmm.common.Response
+import com.paulomoura.pokedexkmm.common.constants.ErrorConstants
+import com.paulomoura.pokedexkmm.domain.model.doesMatchSearch
+import com.paulomoura.pokedexkmm.domain.usecase.GetPokemonsUseCase
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 

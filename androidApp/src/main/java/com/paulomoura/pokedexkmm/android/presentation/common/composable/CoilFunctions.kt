@@ -1,4 +1,4 @@
-package com.paulomoura.pokedexcomposeclean.presentation.common.composable
+package com.paulomoura.pokedexkmm.android.presentation.common.composable
 
 import androidx.annotation.DrawableRes
 import androidx.compose.runtime.Composable

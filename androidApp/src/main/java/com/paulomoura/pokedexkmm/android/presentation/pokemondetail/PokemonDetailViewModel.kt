@@ -1,10 +1,10 @@
-package com.paulomoura.pokedexcomposeclean.presentation.pokemondetail
+package com.paulomoura.pokedexkmm.android.presentation.pokemondetail
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.paulomoura.pokedexcomposeclean.common.Response
-import com.paulomoura.pokedexcomposeclean.common.constants.ErrorConstants
-import com.paulomoura.pokedexcomposeclean.domain.usecase.GetPokemonUseCase
+import com.paulomoura.pokedexkmm.common.Response
+import com.paulomoura.pokedexkmm.common.constants.ErrorConstants
+import com.paulomoura.pokedexkmm.domain.usecase.GetPokemonUseCase
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 
