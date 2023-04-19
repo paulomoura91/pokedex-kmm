@@ -4,6 +4,8 @@ plugins {
     kotlin("multiplatform")
     id("com.android.library")
     kotlin("plugin.serialization") version "1.8.10"
+    id("com.google.devtools.ksp") version "1.8.10-1.0.9"
+    id("com.rickclephas.kmp.nativecoroutines") version "1.0.0-ALPHA-7"
 }
 
 kotlin {
@@ -26,6 +28,10 @@ kotlin {
     }
 
     sourceSets {
+        all {
+            languageSettings.optIn("kotlin.experimental.ExperimentalObjCName")
+        }
+
         val commonMain by getting {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")
