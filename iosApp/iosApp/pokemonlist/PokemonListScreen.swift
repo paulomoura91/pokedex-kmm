@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct PokemonListScreen: View {
     
     @StateObject var pokemonsViewModel = PokemonsViewModel()
     
@@ -9,17 +9,16 @@ struct ContentView: View {
         case .loading(let isLoading):
             if (isLoading) { Text("Loading") }
         case .pokemonListItems(let pokemons):
-            List(pokemons, id: \.number) { pokemon in
-                Text(pokemon.name)
-            }
+            ListPokemon(pokemons: pokemons)
         case .error(let errorMessage):
             Text(errorMessage)
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct PokemonListScreen_Previews: PreviewProvider {
 	static var previews: some View {
-		ContentView()
+        PokemonListScreen()
 	}
 }
+
