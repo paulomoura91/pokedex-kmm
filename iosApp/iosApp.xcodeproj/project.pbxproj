@@ -13,6 +13,7 @@
 		7555FF83242A565900829871 /* PokemonListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* PokemonListScreen.swift */; };
 		9571509B29EFD0B600EF7AC0 /* KMPNativeCoroutinesRxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9571509A29EFD0B600EF7AC0 /* KMPNativeCoroutinesRxSwift */; };
 		9571509D29EFE31F00EF7AC0 /* PokemonListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9571509C29EFE31F00EF7AC0 /* PokemonListViewModel.swift */; };
+		957150A029EFEC5500EF7AC0 /* PokemonListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9571509F29EFEC5500EF7AC0 /* PokemonListState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,7 @@
 		7555FF82242A565900829871 /* PokemonListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListScreen.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9571509C29EFE31F00EF7AC0 /* PokemonListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListViewModel.swift; sourceTree = "<group>"; };
+		9571509F29EFEC5500EF7AC0 /* PokemonListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				7555FF82242A565900829871 /* PokemonListScreen.swift */,
 				9571509C29EFE31F00EF7AC0 /* PokemonListViewModel.swift */,
+				9571509F29EFEC5500EF7AC0 /* PokemonListState.swift */,
 			);
 			path = pokemonlist;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				9571509D29EFE31F00EF7AC0 /* PokemonListViewModel.swift in Sources */,
 				7555FF83242A565900829871 /* PokemonListScreen.swift in Sources */,
+				957150A029EFEC5500EF7AC0 /* PokemonListState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

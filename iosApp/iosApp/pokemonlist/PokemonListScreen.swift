@@ -4,9 +4,16 @@ struct ContentView: View {
     
     @StateObject var pokemonsViewModel = PokemonsViewModel()
     
-	var body: some View {
-        List(pokemonsViewModel.pokemons, id: \.number) { pokemon in
-            Text(pokemon.name)
+    var body: some View {
+        switch pokemonsViewModel.uiState {
+        case .loading(let isLoading):
+            if (isLoading) { Text("Loading") }
+        case .pokemonListItems(let pokemons):
+            List(pokemons, id: \.number) { pokemon in
+                Text(pokemon.name)
+            }
+        case .error(let errorMessage):
+            Text(errorMessage)
         }
     }
 }

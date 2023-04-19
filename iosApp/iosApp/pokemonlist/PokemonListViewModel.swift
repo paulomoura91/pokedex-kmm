@@ -4,7 +4,7 @@ import KMPNativeCoroutinesRxSwift
 
 class PokemonsViewModel : ObservableObject {
     
-    @Published var pokemons = [PokemonListItem]()
+    @Published var uiState = PokemonListState.loading(false)
     private let useCase: GetPokemonsUseCase
     
     init(useCase: GetPokemonsUseCase = UseCasesHelper().getPokemonsUseCase) {
@@ -22,11 +22,11 @@ class PokemonsViewModel : ObservableObject {
             .subscribe(onNext: { value in
                 switch(value) {
                 case is ResponseLoading<NSArray>:
-                    self.showLoading()
+                    self.uiState = PokemonListState.loading(true)
                 case is ResponseSuccess<NSArray>:
-                    self.pokemons = value.data as! [PokemonListItem]
+                    self.uiState = PokemonListState.pokemonListItems(value.data as! [PokemonListItem])
                 case is ResponseError<NSArray>:
-                    self.showError()
+                    self.uiState = PokemonListState.error(ErrorConstants().ERROR_POKEMON_LIST_STATE)
                 default:
                     break
                 }
@@ -37,13 +37,5 @@ class PokemonsViewModel : ObservableObject {
             }, onDisposed: {
                 print("Observable disposed")
             })
-    }
-    
-    private func showLoading() {
-        
-    }
-    
-    private func showError() {
-        
     }
 }
