@@ -2,16 +2,16 @@ import SwiftUI
 
 struct PokemonListScreen: View {
     
-    @StateObject var pokemonsViewModel = PokemonsViewModel()
+    @StateObject var pokemonListViewModel = PokemonListViewModel()
     
     var body: some View {
-        switch pokemonsViewModel.uiState {
+        switch pokemonListViewModel.uiState {
         case .loading(let isLoading):
-            if (isLoading) { Text("Loading") }
+            if (isLoading) { ProgressView() }
         case .pokemonListItems(let pokemons):
             ListPokemon(pokemons: pokemons)
         case .error(let errorMessage):
-            Text(errorMessage)
+            ErrorView(errorMessage: errorMessage)
         }
     }
 }

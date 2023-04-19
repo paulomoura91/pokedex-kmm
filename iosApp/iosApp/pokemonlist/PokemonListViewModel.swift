@@ -2,22 +2,19 @@ import shared
 import RxSwift
 import KMPNativeCoroutinesRxSwift
 
-class PokemonsViewModel : ObservableObject {
+class PokemonListViewModel : ObservableObject {
     
     @Published var uiState = PokemonListState.loading(false)
     private let useCase: GetPokemonsUseCase
     
     init(useCase: GetPokemonsUseCase = UseCasesHelper().getPokemonsUseCase) {
-        
         self.useCase = useCase
         getPokemons()
     }
     
     private func getPokemons() {
-        
         let observable = createObservable(for: useCase.getPokemons())
-        
-        let disposable = observable
+        let _ = observable
             .observe(on: MainScheduler.instance)
             .subscribe(onNext: { value in
                 switch(value) {
