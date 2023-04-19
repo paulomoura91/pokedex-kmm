@@ -1,3 +1,5 @@
+@file:Suppress("UNUSED_VARIABLE")
+
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
@@ -26,12 +28,13 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.0.1")
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")
                 implementation("io.ktor:ktor-client-core:2.2.4")
                 implementation("io.ktor:ktor-serialization-kotlinx-json:2.2.4")
                 implementation("io.ktor:ktor-client-content-negotiation:2.2.4")
-                implementation("io.ktor:ktor-client-logging:1.5.0")
+                implementation("io.ktor:ktor-client-logging:2.2.4")
                 implementation("io.insert-koin:koin-core:3.4.0")
+                implementation("co.touchlab:kermit:1.2.2")
             }
         }
         val commonTest by getting {
@@ -41,7 +44,7 @@ kotlin {
         }
         val androidMain by getting {
             dependencies {
-                implementation("io.ktor:ktor-client-android:1.5.0")
+                implementation("io.ktor:ktor-client-okhttp:2.2.4")
             }
         }
         val androidUnitTest by getting

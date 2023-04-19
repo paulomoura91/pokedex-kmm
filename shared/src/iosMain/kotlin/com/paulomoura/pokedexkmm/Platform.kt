@@ -1,7 +1,5 @@
 package com.paulomoura.pokedexkmm
 
-import org.koin.core.module.Module
-import org.koin.dsl.module
 import platform.UIKit.UIDevice
 
 class IOSPlatform: Platform {

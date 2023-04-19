@@ -5,7 +5,13 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.*
+import androidx.compose.material.Icon
+import androidx.compose.material.IconButton
+import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Scaffold
+import androidx.compose.material.Surface
+import androidx.compose.material.Text
+import androidx.compose.material.TopAppBar
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.runtime.Composable
@@ -32,11 +38,11 @@ class MainActivity : ComponentActivity() {
 
                 Scaffold(
                     topBar = { ShowToolbar(showBackButton = shouldShowBackButton(navController = navController), navController::navigateUp) },
-                    content = {
+                    content = { paddingValues ->
                         Surface(
                             modifier = Modifier
                                 .fillMaxSize()
-                                .padding(it),
+                                .padding(paddingValues),
                             color = MaterialTheme.colors.background
                         ) {
                             NavHost(navController = navController, startDestination = Route.PokemonList.value) {

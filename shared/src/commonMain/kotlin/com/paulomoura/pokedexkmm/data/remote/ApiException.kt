@@ -1,6 +1,8 @@
 package com.paulomoura.pokedexkmm.data.remote
 
-import io.ktor.client.features.*
+import io.ktor.client.plugins.ClientRequestException
+import io.ktor.client.plugins.RedirectResponseException
+import io.ktor.client.plugins.ServerResponseException
 
 class ApiException private constructor(
     apiMessage: String

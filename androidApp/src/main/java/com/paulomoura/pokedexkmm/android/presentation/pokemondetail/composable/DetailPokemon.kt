@@ -41,7 +41,7 @@ import com.paulomoura.pokedexkmm.android.presentation.ui.theme.Red
 import com.paulomoura.pokedexkmm.android.presentation.ui.theme.SlateGray
 import com.paulomoura.pokedexkmm.android.presentation.ui.theme.Turquoise
 import com.paulomoura.pokedexkmm.android.presentation.ui.theme.YellowGreen
-import com.paulomoura.pokedexkmm.common.extension.toPokemonNumber
+import com.paulomoura.pokedexkmm.android.presentation.common.extension.toPokemonNumber
 import com.paulomoura.pokedexkmm.domain.model.Pokemon
 
 @Composable
