@@ -5,14 +5,13 @@ import KMPNativeCoroutinesRxSwift
 class PokemonListViewModel : ObservableObject {
     
     @Published var uiState = PokemonListState.loading(false)
-    private let useCase: GetPokemonsUseCase
     
-    init(useCase: GetPokemonsUseCase = UseCasesHelper().getPokemonsUseCase) {
-        self.useCase = useCase
+    init() {
         getPokemons()
     }
     
     private func getPokemons() {
+        let useCase = UseCasesHelper().getPokemonsUseCase
         let observable = createObservable(for: useCase.getPokemons())
         let _ = observable
             .observe(on: MainScheduler.instance)
