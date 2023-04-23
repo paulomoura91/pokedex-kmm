@@ -31,11 +31,9 @@ fun PokemonListScreen(navController: NavController) {
         ) {
             CircularProgressIndicator()
         }
-    }
-    if (pokemonListState.error.isNotBlank()) {
+    } else if (pokemonListState.error.isNotBlank()) {
         Toast.makeText(LocalContext.current, pokemonListState.error, Toast.LENGTH_SHORT).show()
-    }
-    if (pokemonListState.pokemonListItems.isNotEmpty()) {
+    } else {
         ListPokemon(
             pokemonListItems = pokemonListState.pokemonListItems,
             searchQuery = searchTextState,
