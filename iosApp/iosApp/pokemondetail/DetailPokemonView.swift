@@ -1,7 +1,7 @@
 import SwiftUI
 import shared
 
-struct DetailPokemon: View {
+struct DetailPokemonView: View {
     
     let pokemon: Pokemon
     

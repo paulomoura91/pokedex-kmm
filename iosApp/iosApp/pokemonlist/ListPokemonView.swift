@@ -1,7 +1,7 @@
 import SwiftUI
 import shared
 
-struct ListPokemon: View {
+struct ListPokemonView: View {
     
     @State private var searchText = ""
     private let pokemons: [PokemonListItem]
