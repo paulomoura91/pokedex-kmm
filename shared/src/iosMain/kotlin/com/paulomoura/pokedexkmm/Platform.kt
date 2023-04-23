@@ -1,9 +1,28 @@
 package com.paulomoura.pokedexkmm
 
-import platform.UIKit.UIDevice
+import platform.Foundation.NSString
+import platform.Foundation.stringWithFormat
 
-class IOSPlatform: Platform {
-    override val name: String = UIDevice.currentDevice.systemName() + " " + UIDevice.currentDevice.systemVersion
+actual fun formatString(format: String, vararg args: Any?): String {
+    var formattedString = ""
+    val regEx = "%[\\d|.]*[sdf]|%".toRegex()
+    val singleFormats = regEx.findAll(format).map {
+        it.groupValues.first()
+    }.toList()
+    val newStrings = format.split(regEx)
+    for (i in 0 until args.count()) {
+        val arg = args[i]
+        formattedString += when (arg) {
+            is Double -> {
+                NSString.stringWithFormat(newStrings[i] + singleFormats[i], args[i] as Double)
+            }
+            is Int -> {
+                NSString.stringWithFormat(newStrings[i] + singleFormats[i], args[i] as Int)
+            }
+            else -> {
+                NSString.stringWithFormat(newStrings[i] + "%@", args[i])
+            }
+        }
+    }
+    return formattedString
 }
-
-actual fun getPlatform(): Platform = IOSPlatform()

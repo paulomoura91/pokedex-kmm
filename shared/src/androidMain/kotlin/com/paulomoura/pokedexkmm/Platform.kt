@@ -1,7 +1,5 @@
 package com.paulomoura.pokedexkmm
 
-class AndroidPlatform : Platform {
-    override val name: String = "Android ${android.os.Build.VERSION.SDK_INT}"
+actual fun formatString(format: String, vararg args: Any?): String {
+    return java.lang.String.format(format, *args)
 }
-
-actual fun getPlatform(): Platform = AndroidPlatform()

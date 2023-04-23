@@ -1,7 +1,3 @@
 package com.paulomoura.pokedexkmm
 
-interface Platform {
-    val name: String
-}
-
-expect fun getPlatform(): Platform
+expect fun formatString(format: String, vararg args: Any?): String
