@@ -15,7 +15,7 @@ struct PokemonDetailScreen: View {
         case .loading(let isLoading):
             if (isLoading) { ProgressView() }
         case .pokemon(let pokemon):
-            DetailPokemon(pokemon: pokemon)
+            DetailPokemonView(pokemon: pokemon)
         case .error(let errorMessage):
             ErrorView(errorMessage: errorMessage)
         }

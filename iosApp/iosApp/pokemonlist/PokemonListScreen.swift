@@ -9,7 +9,7 @@ struct PokemonListScreen: View {
         case .loading(let isLoading):
             if (isLoading) { ProgressView() }
         case .pokemonListItems(let pokemons):
-            ListPokemon(pokemons: pokemons)
+            ListPokemonView(pokemons: pokemons)
         case .error(let errorMessage):
             ErrorView(errorMessage: errorMessage)
         }
