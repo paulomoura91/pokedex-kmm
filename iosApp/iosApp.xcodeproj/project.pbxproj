@@ -20,6 +20,7 @@
 		9597F3F429F4D9D7001685D6 /* PokemonDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9597F3F329F4D9D7001685D6 /* PokemonDetailScreen.swift */; };
 		9597F3F629F4D9EE001685D6 /* DetailPokemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9597F3F529F4D9EE001685D6 /* DetailPokemonView.swift */; };
 		9597F3F829F4DA10001685D6 /* PokemonDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9597F3F729F4DA10001685D6 /* PokemonDetailViewModel.swift */; };
+		95AE819329F71FBD00934E7B /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AE819229F71FBC00934E7B /* HexColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +51,7 @@
 		9597F3F329F4D9D7001685D6 /* PokemonDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailScreen.swift; sourceTree = "<group>"; };
 		9597F3F529F4D9EE001685D6 /* DetailPokemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPokemonView.swift; sourceTree = "<group>"; };
 		9597F3F729F4DA10001685D6 /* PokemonDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailViewModel.swift; sourceTree = "<group>"; };
+		95AE819229F71FBC00934E7B /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				9562019929F062B70015CAD7 /* ErrorView.swift */,
+				95AE819229F71FBC00934E7B /* HexColor.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			files = (
 				9597F3F429F4D9D7001685D6 /* PokemonDetailScreen.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				95AE819329F71FBD00934E7B /* HexColor.swift in Sources */,
 				9562019A29F062B70015CAD7 /* ErrorView.swift in Sources */,
 				9597F3F829F4DA10001685D6 /* PokemonDetailViewModel.swift in Sources */,
 				9571509D29EFE31F00EF7AC0 /* PokemonListViewModel.swift in Sources */,
