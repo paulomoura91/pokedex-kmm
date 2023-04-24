@@ -53,8 +53,8 @@ struct DetailPokemonView: View {
                     }, placeholder: {
                         Image(systemName: "photo.fill")
                     })
-                    Text(evolution.name)//.font(.title)
-                    Text("Nº \(String(format: "%03d", evolution.number))" )//.font(.title2)
+                    Text(evolution.name)
+                    Text("Nº \(String(format: "%03d", evolution.number))" )
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
@@ -63,29 +63,29 @@ struct DetailPokemonView: View {
     }
     
     private func getTypeColor(type: String) -> Color {
-        switch(type.uppercased()) {
-        case PokemonType.GRASS.rawValue: return Color.init(hex: "008000")
-        case PokemonType.POISON.rawValue: return Color.init(hex: "800080")
-        case PokemonType.FIRE.rawValue: return Color.init(hex: "FF0000")
-        case PokemonType.FLYING.rawValue: return Color.init(hex: "6495ED")
-        case PokemonType.WATER.rawValue: return Color.init(hex: "00BFFF")
-        case PokemonType.BUG.rawValue: return Color.init(hex: "9ACD32")
-        case PokemonType.NORMAL.rawValue: return Color.init(hex: "778899")
-        case PokemonType.ELECTRIC.rawValue: return Color.init(hex: "FFD700")
-        case PokemonType.GROUND.rawValue: return Color.init(hex: "DEB887")
-        case PokemonType.FAIRY.rawValue: return Color.init(hex: "FF69B4")
-        case PokemonType.FIGHTING.rawValue: return Color.init(hex: "A52A2A")
-        case PokemonType.PSYCHIC.rawValue: return Color.init(hex: "FF1493")
-        case PokemonType.ROCK.rawValue: return Color.init(hex: "BDB76B")
-        case PokemonType.STEEL.rawValue: return Color.init(hex: "708090")
-        case PokemonType.ICE.rawValue: return Color.init(hex: "40E0D0")
-        case PokemonType.GHOST.rawValue: return Color.init(hex: "483D8B")
-        case PokemonType.DRAGON.rawValue: return Color.init(hex: "8A2BE2")
+        switch(type.lowercased()) {
+        case PokemonType.grass.rawValue: return Color.init(hex: "008000")
+        case PokemonType.poison.rawValue: return Color.init(hex: "800080")
+        case PokemonType.fire.rawValue: return Color.init(hex: "FF0000")
+        case PokemonType.flying.rawValue: return Color.init(hex: "6495ED")
+        case PokemonType.water.rawValue: return Color.init(hex: "00BFFF")
+        case PokemonType.bug.rawValue: return Color.init(hex: "9ACD32")
+        case PokemonType.normal.rawValue: return Color.init(hex: "778899")
+        case PokemonType.electric.rawValue: return Color.init(hex: "FFD700")
+        case PokemonType.ground.rawValue: return Color.init(hex: "DEB887")
+        case PokemonType.fairy.rawValue: return Color.init(hex: "FF69B4")
+        case PokemonType.fighting.rawValue: return Color.init(hex: "A52A2A")
+        case PokemonType.psychic.rawValue: return Color.init(hex: "FF1493")
+        case PokemonType.rock.rawValue: return Color.init(hex: "BDB76B")
+        case PokemonType.steel.rawValue: return Color.init(hex: "708090")
+        case PokemonType.ice.rawValue: return Color.init(hex: "40E0D0")
+        case PokemonType.ghost.rawValue: return Color.init(hex: "483D8B")
+        case PokemonType.dragon.rawValue: return Color.init(hex: "8A2BE2")
         default: return Color.secondary
         }
     }
 }
 
 enum PokemonType : String {
-    case GRASS, POISON, FIRE, FLYING, WATER, BUG, NORMAL, ELECTRIC, GROUND, FAIRY, FIGHTING, PSYCHIC, ROCK, STEEL, ICE, GHOST, DRAGON
+    case grass, poison, fire, flying, water, bug, normal, electric, ground, fairy, fighting, psychic, rock, steel, ice, ghost, dragon
 }
